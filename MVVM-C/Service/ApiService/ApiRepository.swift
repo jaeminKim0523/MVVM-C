@@ -10,7 +10,7 @@ import Foundation
 class ApiRepository {
     typealias CompletionHandler = (VolumeModel) -> Void
     
-    let apiKey: String = "AIzaSyC1B1cigRTivVEdP2BdjqRvLbbAoc6ZvI8"
+    let apiKey: String = ""
     
     func loadSearchResult(model: SearchInfoModel, completion: @escaping CompletionHandler) {
         

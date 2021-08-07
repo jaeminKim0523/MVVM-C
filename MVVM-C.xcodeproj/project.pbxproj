@@ -118,10 +118,10 @@
 		F52BCB6826BE764E00396FBB /* MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCB9C26BE76B100396FBB /* Model */,
 				F52BCB7F26BE76B100396FBB /* Presenter */,
-				F52BCBA726BE76B100396FBB /* Resource */,
+				F52BCB9C26BE76B100396FBB /* Model */,
 				F52BCBA426BE76B100396FBB /* Service */,
+				F52BCBA726BE76B100396FBB /* Resource */,
 			);
 			path = "MVVM-C";
 			sourceTree = "<group>";
@@ -129,10 +129,10 @@
 		F52BCB7F26BE76B100396FBB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F52BCB9826BE76B100396FBB /* Base */,
+				F52BCB9526BE76B100396FBB /* Application */,
 				F52BCB8026BE76B100396FBB /* SearchVC */,
 				F52BCB8D26BE76B100396FBB /* DetailVC */,
-				F52BCB9526BE76B100396FBB /* Application */,
-				F52BCB9826BE76B100396FBB /* Base */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		F52BCB8026BE76B100396FBB /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCB8126BE76B100396FBB /* ViewModel */,
-				F52BCB8326BE76B100396FBB /* Coordinator */,
 				F52BCB8526BE76B100396FBB /* Model */,
+				F52BCB8326BE76B100396FBB /* Coordinator */,
 				F52BCB8826BE76B100396FBB /* View */,
+				F52BCB8126BE76B100396FBB /* ViewModel */,
 			);
 			path = SearchVC;
 			sourceTree = "<group>";
