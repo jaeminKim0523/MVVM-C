@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="7mA-U3-FSp">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oCs-d9-yWq" customClass="SearchViewController" customModule="WantedLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O4e-gr-OTG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvH-Cy-Ntf">
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="oFM-Pc-FYr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oCs-d9-yWq" id="BbK-Lc-UEI"/>
+                                </connections>
+                            </searchBar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="efo-j1-e1S">
+                                <rect key="frame" x="188.5" y="479.5" width="37" height="37"/>
+                                <color key="color" systemColor="labelColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UsY-XS-8Iy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xvH-Cy-Ntf" firstAttribute="top" secondItem="oFM-Pc-FYr" secondAttribute="bottom" id="07x-iQ-zWZ"/>
+                            <constraint firstItem="efo-j1-e1S" firstAttribute="centerY" secondItem="xvH-Cy-Ntf" secondAttribute="centerY" id="7Id-gU-TWy"/>
+                            <constraint firstItem="xvH-Cy-Ntf" firstAttribute="leading" secondItem="UsY-XS-8Iy" secondAttribute="leading" id="FVq-1A-5ap"/>
+                            <constraint firstItem="oFM-Pc-FYr" firstAttribute="top" secondItem="UsY-XS-8Iy" secondAttribute="top" id="J42-9i-Rhb"/>
+                            <constraint firstItem="UsY-XS-8Iy" firstAttribute="trailing" secondItem="xvH-Cy-Ntf" secondAttribute="trailing" id="NOx-ik-wo4"/>
+                            <constraint firstItem="oFM-Pc-FYr" firstAttribute="leading" secondItem="UsY-XS-8Iy" secondAttribute="leading" id="bGn-Pj-SDr"/>
+                            <constraint firstItem="efo-j1-e1S" firstAttribute="centerX" secondItem="O4e-gr-OTG" secondAttribute="centerX" id="fDR-Me-tgj"/>
+                            <constraint firstItem="oFM-Pc-FYr" firstAttribute="trailing" secondItem="UsY-XS-8Iy" secondAttribute="trailing" id="lzh-fE-NGH"/>
+                            <constraint firstAttribute="bottom" secondItem="xvH-Cy-Ntf" secondAttribute="bottom" id="xBX-ht-swo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="efo-j1-e1S" id="hsg-wz-4Fj"/>
+                        <outlet property="searchBar" destination="oFM-Pc-FYr" id="wzQ-4y-JZZ"/>
+                        <outlet property="tableView" destination="xvH-Cy-Ntf" id="XwU-6W-OKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdD-Zw-fxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333.33333333333337" y="-16.071428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
