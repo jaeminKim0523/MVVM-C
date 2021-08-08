@@ -12,23 +12,12 @@ class SearchViewModel: BaseViewModel<SearchCoordinator> {
     
     var searchModels: [SearchResultModel] = []
     
-    let repository: ApiRepository = ApiRepository()
     let searchSubject: PassthroughSubject = PassthroughSubject<[SearchResultModel], Never>()
     
+    let service = SearchService()
+    
     func searchBook(search keyword: String) {
-        let searchModel = SearchInfoModel(keyword: keyword, type: .intitle)
-        repository.loadSearchResult(model: searchModel) { [weak self] model in
-            
-            var searchModels: [SearchResultModel] = []
-            
-            for m in  model.items {
-                guard let url = URL(string: m.volumeInfoModel.thumbnailUrl) else {
-                    continue
-                }
-                let searchModel: SearchResultModel = SearchResultModel(title: m.volumeInfoModel.title, subtitle: m.volumeInfoModel.subtitle, publisher: m.volumeInfoModel.publisher, thumbnailUrl: url)
-                searchModels.append(searchModel)
-            }
-            
+        service.searchBook(search: keyword) { [weak self] (searchModels) in
             self?.searchModels = searchModels
             self?.searchSubject.send(searchModels)
         }

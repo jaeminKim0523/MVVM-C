@@ -16,23 +16,20 @@
 		F52BCBB126BE76B100396FBB /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52BCB8A26BE76B100396FBB /* SearchTableViewCell.xib */; };
 		F52BCBB226BE76B100396FBB /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52BCB8B26BE76B100396FBB /* SearchViewController.storyboard */; };
 		F52BCBB326BE76B100396FBB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB8C26BE76B100396FBB /* SearchTableViewCell.swift */; };
-		F52BCBB426BE76B100396FBB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB8F26BE76B100396FBB /* DetailViewModel.swift */; };
-		F52BCBB526BE76B100396FBB /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9126BE76B100396FBB /* DetailCoordinator.swift */; };
-		F52BCBB626BE76B100396FBB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9326BE76B100396FBB /* DetailViewController.swift */; };
-		F52BCBB726BE76B100396FBB /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52BCB9426BE76B100396FBB /* DetailViewController.storyboard */; };
 		F52BCBB826BE76B100396FBB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9626BE76B100396FBB /* AppCoordinator.swift */; };
 		F52BCBB926BE76B100396FBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9726BE76B100396FBB /* AppDelegate.swift */; };
 		F52BCBBA26BE76B100396FBB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9926BE76B100396FBB /* BaseViewController.swift */; };
 		F52BCBBB26BE76B100396FBB /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9A26BE76B100396FBB /* BaseViewModel.swift */; };
 		F52BCBBC26BE76B100396FBB /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9B26BE76B100396FBB /* BaseCoordinator.swift */; };
 		F52BCBBD26BE76B100396FBB /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9E26BE76B100396FBB /* NetworkConfiguration.swift */; };
-		F52BCBBE26BE76B200396FBB /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9F26BE76B100396FBB /* NetworkModel.swift */; };
+		F52BCBBE26BE76B200396FBB /* ApiNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCB9F26BE76B100396FBB /* ApiNetwork.swift */; };
 		F52BCBBF26BE76B200396FBB /* VolumeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCBA126BE76B100396FBB /* VolumeInfoModel.swift */; };
 		F52BCBC026BE76B200396FBB /* VolumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCBA226BE76B100396FBB /* VolumeModel.swift */; };
 		F52BCBC126BE76B200396FBB /* VolumeItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCBA326BE76B100396FBB /* VolumeItemModel.swift */; };
 		F52BCBC226BE76B200396FBB /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52BCBA626BE76B100396FBB /* ApiRepository.swift */; };
 		F52BCBC326BE76B200396FBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52BCBA826BE76B100396FBB /* Assets.xcassets */; };
 		F52BCBC426BE76B200396FBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52BCBA926BE76B100396FBB /* LaunchScreen.storyboard */; };
+		F567891926C00FBF00E58F50 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567891826C00FBF00E58F50 /* SearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,17 +45,13 @@
 		F52BCB8A26BE76B100396FBB /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		F52BCB8B26BE76B100396FBB /* SearchViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		F52BCB8C26BE76B100396FBB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		F52BCB8F26BE76B100396FBB /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		F52BCB9126BE76B100396FBB /* DetailCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
-		F52BCB9326BE76B100396FBB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F52BCB9426BE76B100396FBB /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		F52BCB9626BE76B100396FBB /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F52BCB9726BE76B100396FBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52BCB9926BE76B100396FBB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F52BCB9A26BE76B100396FBB /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F52BCB9B26BE76B100396FBB /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		F52BCB9E26BE76B100396FBB /* NetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
-		F52BCB9F26BE76B100396FBB /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		F52BCB9F26BE76B100396FBB /* ApiNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiNetwork.swift; sourceTree = "<group>"; };
 		F52BCBA126BE76B100396FBB /* VolumeInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeInfoModel.swift; sourceTree = "<group>"; };
 		F52BCBA226BE76B100396FBB /* VolumeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeModel.swift; sourceTree = "<group>"; };
 		F52BCBA326BE76B100396FBB /* VolumeItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeItemModel.swift; sourceTree = "<group>"; };
@@ -66,6 +59,7 @@
 		F52BCBA826BE76B100396FBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52BCBAA26BE76B100396FBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52BCBC826BE76CF00396FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F567891826C00FBF00E58F50 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				F52BCB7F26BE76B100396FBB /* Presenter */,
-				F52BCB9C26BE76B100396FBB /* Model */,
-				F52BCBA426BE76B100396FBB /* Service */,
+				F567891726C00F6F00E58F50 /* Service */,
+				F52BCBA426BE76B100396FBB /* Repository */,
+				F52BCB9D26BE76B100396FBB /* Utils */,
 				F52BCBA726BE76B100396FBB /* Resource */,
 			);
 			path = "MVVM-C";
@@ -132,7 +127,6 @@
 				F52BCB9826BE76B100396FBB /* Base */,
 				F52BCB9526BE76B100396FBB /* Application */,
 				F52BCB8026BE76B100396FBB /* SearchVC */,
-				F52BCB8D26BE76B100396FBB /* DetailVC */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -140,7 +134,6 @@
 		F52BCB8026BE76B100396FBB /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCB8526BE76B100396FBB /* Model */,
 				F52BCB8326BE76B100396FBB /* Coordinator */,
 				F52BCB8826BE76B100396FBB /* View */,
 				F52BCB8126BE76B100396FBB /* ViewModel */,
@@ -164,15 +157,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		F52BCB8526BE76B100396FBB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F52BCB8626BE76B100396FBB /* SearchResultModel.swift */,
-				F52BCB8726BE76B100396FBB /* SearchInfoModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		F52BCB8826BE76B100396FBB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,46 +168,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F52BCB8D26BE76B100396FBB /* DetailVC */ = {
-			isa = PBXGroup;
-			children = (
-				F52BCB8E26BE76B100396FBB /* ViewModel */,
-				F52BCB9026BE76B100396FBB /* Coordinator */,
-				F52BCB9226BE76B100396FBB /* View */,
-			);
-			path = DetailVC;
-			sourceTree = "<group>";
-		};
-		F52BCB8E26BE76B100396FBB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				F52BCB8F26BE76B100396FBB /* DetailViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		F52BCB9026BE76B100396FBB /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				F52BCB9126BE76B100396FBB /* DetailCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		F52BCB9226BE76B100396FBB /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F52BCB9326BE76B100396FBB /* DetailViewController.swift */,
-				F52BCB9426BE76B100396FBB /* DetailViewController.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F52BCB9526BE76B100396FBB /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCB9626BE76B100396FBB /* AppCoordinator.swift */,
 				F52BCB9726BE76B100396FBB /* AppDelegate.swift */,
+				F52BCB9626BE76B100396FBB /* AppCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -241,19 +190,18 @@
 		F52BCB9C26BE76B100396FBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCB9D26BE76B100396FBB /* Network */,
-				F52BCBA026BE76B100396FBB /* Entities */,
+				F52BCB8626BE76B100396FBB /* SearchResultModel.swift */,
+				F52BCB8726BE76B100396FBB /* SearchInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F52BCB9D26BE76B100396FBB /* Network */ = {
+		F52BCB9D26BE76B100396FBB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCB9E26BE76B100396FBB /* NetworkConfiguration.swift */,
-				F52BCB9F26BE76B100396FBB /* NetworkModel.swift */,
+				F567890D26C00ED900E58F50 /* Network */,
 			);
-			path = Network;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F52BCBA026BE76B100396FBB /* Entities */ = {
@@ -266,20 +214,13 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		F52BCBA426BE76B100396FBB /* Service */ = {
+		F52BCBA426BE76B100396FBB /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				F52BCBA526BE76B100396FBB /* ApiService */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		F52BCBA526BE76B100396FBB /* ApiService */ = {
-			isa = PBXGroup;
-			children = (
+				F52BCBA026BE76B100396FBB /* Entities */,
 				F52BCBA626BE76B100396FBB /* ApiRepository.swift */,
 			);
-			path = ApiService;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		F52BCBA726BE76B100396FBB /* Resource */ = {
@@ -290,6 +231,24 @@
 				F52BCBC826BE76CF00396FBB /* Info.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		F567890D26C00ED900E58F50 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F52BCB9E26BE76B100396FBB /* NetworkConfiguration.swift */,
+				F52BCB9F26BE76B100396FBB /* ApiNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F567891726C00F6F00E58F50 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F52BCB9C26BE76B100396FBB /* Model */,
+				F567891826C00FBF00E58F50 /* SearchService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52BCBB126BE76B100396FBB /* SearchTableViewCell.xib in Resources */,
-				F52BCBB726BE76B100396FBB /* DetailViewController.storyboard in Resources */,
 				F52BCBC326BE76B200396FBB /* Assets.xcassets in Resources */,
 				F52BCBC426BE76B200396FBB /* LaunchScreen.storyboard in Resources */,
 				F52BCBB226BE76B100396FBB /* SearchViewController.storyboard in Resources */,
@@ -409,23 +367,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52BCBB926BE76B100396FBB /* AppDelegate.swift in Sources */,
-				F52BCBB626BE76B100396FBB /* DetailViewController.swift in Sources */,
 				F52BCBB026BE76B100396FBB /* SearchViewController.swift in Sources */,
 				F52BCBB826BE76B100396FBB /* AppCoordinator.swift in Sources */,
 				F52BCBBF26BE76B200396FBB /* VolumeInfoModel.swift in Sources */,
 				F52BCBC126BE76B200396FBB /* VolumeItemModel.swift in Sources */,
-				F52BCBB526BE76B100396FBB /* DetailCoordinator.swift in Sources */,
 				F52BCBBA26BE76B100396FBB /* BaseViewController.swift in Sources */,
 				F52BCBAD26BE76B100396FBB /* SearchCoordinator.swift in Sources */,
 				F52BCBBB26BE76B100396FBB /* BaseViewModel.swift in Sources */,
 				F52BCBC026BE76B200396FBB /* VolumeModel.swift in Sources */,
-				F52BCBBE26BE76B200396FBB /* NetworkModel.swift in Sources */,
-				F52BCBB426BE76B100396FBB /* DetailViewModel.swift in Sources */,
+				F52BCBBE26BE76B200396FBB /* ApiNetwork.swift in Sources */,
 				F52BCBAC26BE76B100396FBB /* SearchViewModel.swift in Sources */,
 				F52BCBB326BE76B100396FBB /* SearchTableViewCell.swift in Sources */,
 				F52BCBBD26BE76B100396FBB /* NetworkConfiguration.swift in Sources */,
 				F52BCBC226BE76B200396FBB /* ApiRepository.swift in Sources */,
 				F52BCBBC26BE76B100396FBB /* BaseCoordinator.swift in Sources */,
+				F567891926C00FBF00E58F50 /* SearchService.swift in Sources */,
 				F52BCBAE26BE76B100396FBB /* SearchResultModel.swift in Sources */,
 				F52BCBAF26BE76B100396FBB /* SearchInfoModel.swift in Sources */,
 			);
